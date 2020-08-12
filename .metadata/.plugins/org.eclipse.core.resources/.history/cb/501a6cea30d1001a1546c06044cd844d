@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+   
+   String nombre = request.getParameter("nombre");
+   String celular = request.getParameter("telefono");
+   String idCurso = request.getParameter("idCurso");
+   String idFormaDePago = request.getParameter("idFormaPago");
+%>
+
+<html> 
+<body>
+   <h1>Registro existoso</h1>
+   Nombre del alumno: <%=nombre%>
+   Teléfono: <%=celular%>
+   Id de curso: <%=idCurso%>
+   Id forma de pago: <%=idFormaDePago%>
+   
+ 
+</body>
+</html>

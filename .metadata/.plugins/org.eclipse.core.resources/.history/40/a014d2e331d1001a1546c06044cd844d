@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+   
+   String nombre = request.getParameter("nombre");
+   String celular = request.getParameter("telefono");
+   String idCurso = request.getParameter("idCurso");
+   String idFormaDePago = request.getParameter("idFormaPago");
+%>
+
+<html> 
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>	
+<title>Confirmacion</title>
+</head>
+<body>
+<div class="container">
+	<h1>Registro existoso</h1>
+   <table class="table">ç
+<tr class="bg-success">Nombre del alumno: <%=nombre%></tr>
+<tr class="bg-success">Teléfono: <%=celular%></tr>
+<tr class="bg-success">Id de curso: <%=idCurso%></tr>
+<tr class="bg-success">Id forma de pago: <%=idFormaDePago%></tr>
+
+ </table>
+</div>
+</body>
+</html>

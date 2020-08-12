@@ -1,0 +1,15 @@
+package com.desafiolatam.facade;
+
+import com.desafiolatam.daos.UsuarioDao;
+import com.desafiolatam.entidades.UsuarioDTO;
+
+public class Facade {
+
+	
+public boolean registroUsuario(UsuarioDTO dto) {
+	UsuarioDao udao = new UsuarioDao();
+	return udao.registroUsuario(dto);
+	
+}
+	
+}

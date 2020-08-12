@@ -1,0 +1,45 @@
+package com.desafiolatam.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.desafiolatam.entidades.UsuarioDTO;
+import com.desafiolatam.facade.Facade;
+
+/**
+ * Servlet implementation class InicioSesion
+ */
+@WebServlet("/InicioSesion")
+public class InicioSesion extends HttpServlet {
+   
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//obtenemos el facade
+		Facade facade = new Facade();
+
+	String usuarioNombre = request.getParameter("usuario");
+	String usuarioClave = request.getParameter("clave");
+	boolean buscar = facade.loginUsuario(usuarioNombre, usuarioClave);
+	PrintWriter out = response.getWriter();
+	
+	if(buscar) {
+		//request.getRequestDispatcher("Login.jsp").forward(request, response);
+	}else{
+		   out.println("<script type=\"text/javascript\">");
+		   out.println("alert('User or password incorrect');");
+		   out.println("location='index.jsp';");
+		   out.println("</script>");
+		}
+	
+		
+	}
+
+}

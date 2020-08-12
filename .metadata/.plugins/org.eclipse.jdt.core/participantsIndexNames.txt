@@ -1,0 +1,31 @@
+INDEX VERSION 1.131
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4256752003.index
+\ListarInscripciones\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2817937292.index
+\GeneradorFactura\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\88327962.index
+\GeneradorFactura\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1147662978.index
+\SesionesEjercicio\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3249632044.index
+\JstlEjercicio03\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\764079539.index
+\JstlEjercicio01\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3228462119.index
+\SesionesEjercicio\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2361001860.index
+\ListarInscripciones\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1558761822.index
+\14_g_apoyo_desafio-Listar inscripciones\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1038842280.index
+\GeneradorFactura\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2522530573.index
+\HolaMundo.jsp\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2251091506.index
+\HolaMundo\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1511276355.index
+\JstlEjercicio02\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3877214140.index
+\HoroscopoChino\src
+C:\Users\Marcela\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2881751431.index
+\HoroscopoChino\src

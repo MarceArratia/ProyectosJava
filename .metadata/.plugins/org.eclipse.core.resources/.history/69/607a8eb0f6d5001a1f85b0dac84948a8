@@ -1,0 +1,10 @@
+package com.desafiolatam.daos;
+
+import com.desafiolatam.entidades.UsuarioDTO;
+
+public class UsuarioDao {
+
+	public boolean registroUsuario(UsuarioDTO dto) {
+		return false;
+	}
+}

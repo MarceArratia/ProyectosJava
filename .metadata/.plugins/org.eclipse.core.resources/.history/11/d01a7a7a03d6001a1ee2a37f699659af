@@ -1,0 +1,39 @@
+package com.desafiolatam.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.desafiolatam.facade.Facade;
+import com.desafiolatam.entidades.UsuarioDTO;
+import java.io.IOException;
+import java.sql.SQLException;
+
+
+@WebServlet("/registroUsuario")
+
+public class registroUsuario extends HttpServlet {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
+		//obtenemos el facade
+		Facade facade = new Facade();
+		try {
+		UsuarioDTO dto = new UsuarioDTO();
+		dto.setNombre(request.getParameter("nombre"));
+		dto.setPassword(request.getParameter("password"));
+		dto.setNickname(request.getParameter("usuario"));
+		dto.setMail(request.getParameter("mail"));
+		dto.setFecha(Integer.parseInt(request.getParameter("fecha")));
+			Boolean insertar = facade.registroUsuario(dto);
+			
+			
+		
+		
+		
+		} catch (SQLException | ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

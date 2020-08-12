@@ -1,0 +1,10 @@
+package com.desafiolatam.facade;
+
+public class Facade {
+
+	
+public boolean registroUsuario(Usuario _usuario) {
+	
+}
+	
+}

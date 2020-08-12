@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page import="com.desafiolatam.entidades.InscripcionDTO" %>
+<%@ page import="java.util.List"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<%
+List<InscripcionDTO>  inscripcion;
+
+// capturamos informacion que viene desde el request
+inscripcion = (List<InscripcionDTO>)request.getAttribute("inscripcion");
+%>
+<body>
+<table>
+<th>Id</th>
+<th>Nombre</th>
+<th>Teléfono</th>
+<th>Código Curso</th>
+<th>Forma de pago</th>
+<%
+for(InscripcionDTO dto: inscripcion){
+	
+%>
+<tr><td><% dto.getIdInsc(); %></td><td><%dto.getNombre(); %></td><td><%dto.getCelular(); %></td><td><%dto.getIdCurso(); %></td><td><%dto.getIdFormaDePago(); %></td></tr>
+<%
+}
+%>
+</table>
+</body>
+</html>

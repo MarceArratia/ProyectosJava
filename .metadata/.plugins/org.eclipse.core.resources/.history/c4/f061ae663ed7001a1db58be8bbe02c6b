@@ -1,0 +1,80 @@
+package com.desafiolatam.daos;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+import com.desafiolatam.entidades.UsuarioDTO;
+
+public class UsuarioDao {
+
+	public boolean registroUsuario(UsuarioDTO dto) throws ClassNotFoundException, SQLException {
+	
+		
+		String registro = " INSERT INTO usuario("
+                + " NOMBRE, PASSWORD, NICKNAME, MAIL,FECHA )"
+                + " VALUES (?,?,?,?,?) ";
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Connection conexion = null;
+		String url = "jdbc:oracle:thin:@//localhost:1521/xe";
+		conexion = DriverManager.getConnection(url,"hr","1234");
+		
+		try(
+				PreparedStatement stmt1 = conexion.prepareStatement(registro);
+				
+		   ){
+			stmt1.setString(1,dto.getNombre());
+			stmt1.setString(2,dto.getPassword());
+			stmt1.setString(3,dto.getNickname());
+			stmt1.setString(4,dto.getMail());
+			stmt1.setInt(5,dto.getFecha());
+			stmt1.executeUpdate();
+			
+			
+		return false;	
+		
+		}catch(SQLException ex) {
+			ex.printStackTrace();
+			throw new RuntimeException("A ocurrido un error inesperado " + ex);
+		}
+		
+	}
+	
+	
+	public boolean loginUsuario(String nombre, String clave) throws ClassNotFoundException, SQLException {
+
+		String login = "select * from usuario WHERE nickname='"+nombre+"' and password='"+clave+"'";
+               
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Connection conexion = null;
+		String url = "jdbc:oracle:thin:@//localhost:1521/xe";
+		conexion = DriverManager.getConnection(url,"hr","1234");
+		
+		try(
+				PreparedStatement stmt1 = conexion.prepareStatement(login);
+				
+		   ){
+			ResultSet resultado = stmt1.executeQuery();
+			while(resultado.next()) {
+				return true;
+			}	
+			
+		return false;	
+		
+		}catch(SQLException ex) {
+			ex.printStackTrace();
+			throw new RuntimeException("A ocurrido un error inesperado " + ex);
+		}
+	}
+
+
+	public UsuarioDTO modificarDatos(String nombreUsuario) {
+		// TODO Auto-generated method stub
+		return null;
+
+	}
+}

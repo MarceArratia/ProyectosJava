@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="container">
+		<!--Barra de navegacion -->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="RegistroUsuario">REGISTRAR USUARIO</a></li>
+				<li class="nav-item"><a class="nav-link" href="listarUsuarios.jsp">LISTAR USUARIO</a></li>
+				<li class="nav-item"><a class="nav-link" href="eliminacionUsuario.jsp">ELIMINACION USUARIO</a></li>
+				<li class="nav-item"><a class="nav-link" href="modificacionUsuario.jsp">MODIFICACION USUARIO</a></li>
+				<li class="nav-item"><a class="nav-link" href="horoscopo.jsp">CONSULTAR ANIMAL ZODIACAL</a></li>
+				<li class="nav-item"><a class="nav-link" href="cerrarSesion">CERRAR SESION</a></li>
+			</ul>
+		</nav>
+		
+		<div id="contenedor" style="margin: 0 auto; border: 1px solid black; width: 600px; margin-top: 50px;">
+		<div id="content" style="margin:5%">
+<form action="registroUsuario" method="post">
+
+<label for="nombre">Nombre:</label>
+<input type="text" class="form-control" id="nombre" name="nombre">
+<label for="nombre">Password:</label>
+<input type="text" class="form-control" id="password" name="password">
+<label for="nombre">Usuario:</label>
+<input type="text" class="form-control" id="usuario" name="usuario">
+<label for="nombre">Correo:</label>
+<input type="text" class="form-control" id="mail" name="mail">
+<label for="nombre">Fecha:</label>
+<input type="text" class="form-control" id="fecha" name="fecha">
+<button type="submit" class="btn btn-default">Enviar</button>
+</form>
+</body>
+</html>

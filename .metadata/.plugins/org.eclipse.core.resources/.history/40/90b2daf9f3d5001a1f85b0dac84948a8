@@ -1,0 +1,5 @@
+package com.desafiolatam.entidades;
+
+public class UsuarioDTO {
+
+}
